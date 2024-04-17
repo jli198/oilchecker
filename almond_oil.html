@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavender Oil</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+
+    <!-- Additional styles for Lavender Oil page -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-container img {
+            margin-right: 10px;
+            min-width: 200px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 968px) {
+            .logo-container img {
+                width: 80px; /* Decrease the logo size for smaller screens */
+                height: 80px;
+            }
+
+            .logo-text {
+                display: none; /* Hide the text below the logo */
+            }
+        }
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 2.5em; /* Larger font size */
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Text shadow */
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto; /* Center the main content */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px; /* Add margin at the bottom */
+        }
+
+        main h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        main p {
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+        img {
+            max-width: 100%; /* Set maximum width for images */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space below image */
+            margin: 0 auto; /* Center the image horizontally */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Image shadow */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="oilchecker-logo.png" alt="OilChecker Logo"></a>
+            <!--h2 class="logo-text"><em>----------"The only stop you need for all your oil checking needs!"</em>-Gordon Ramsay</h2-->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mechanical_oils.html">Mechanical Oils</a></li>
+                <li><a href="cooking_oils.html">Cooking Oils</a></li>
+                <!-- Add more navigation links as needed -->
+                <li>
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="search-results-box"></div>
+        
+    
+        <!-- Add JavaScript for handling search -->
+    <script src="search.js"></script>
+    <h1>Almond Oil</h1>
+
+    <main>
+        <img src="almond_oil_image.jpg" alt="Almond Oil" style="border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2>About Almond Oil</h2>
+        <p>Almond oil is rich in vitamin E and is used for moisturizing the skin. It has numerous benefits...</p>
+        <p>Benefits of Almond Oil:</p>
+        <ul>
+            <li>Moisturizes the skin</li>
+            <li>Rich in vitamin E</li>
+            <li>Can help with dryness and irritation</li>
+            <li>Used in aromatherapy and massage</li>
+            <!-- Add more benefits as needed -->
+        </ul>
+        <h2>Recipes Using Almond Oil</h2>
+        <ul>
+            <li><a href="almond_body_scrub.html">Almond Body Scrub</a></li>
+            <li><a href="almond_bath_oil.html">Almond Bath Oil</a></li>
+            <!-- Add more recipe links as needed -->
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 oilchecker Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
