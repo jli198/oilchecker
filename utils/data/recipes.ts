@@ -14,7 +14,7 @@ export const getRecipeById = async (supabase: any, id: string) => {
 	if (error) {
 		throw new Error(error.message);
 	}
-	return data;
+	return data.pop();
 };
 
 interface Recipe {
