@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
 import { createClientSupabase } from "@/utils/supabase/client";
 import React from "react";
@@ -18,20 +17,16 @@ export default function CreateRecipe() {
 				finished, press the blue button to submit.
 			</p>
 			<form>
-				<label id="recipeDescription">Enter a recipe here</label>
+				<label id="recipeTitle">Recipe Title</label>
 				<br />
-				<Input type="text" id="recipeDescription" name="recipe" />
+				<Input type="text" id="recipeTitle" name="title" />
 				<br />
+				<label id="recipeDescription">Recipe Description</label>
+				<Input type="text" id="recipeDescription" name="description" />
 				<Button type="submit" value="Submit">
 					Submit here
 				</Button>
 			</form>
-			<Calendar
-				mode="single"
-				selected={date}
-				onSelect={setDate}
-				className="rounded-md border"
-			/>
 		</div>
 	);
 }
