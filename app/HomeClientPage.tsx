@@ -10,7 +10,7 @@ interface Oil {
 	type: string;
 }
 
-export default function HomeClientPage({ oilData }: { oilData: any }) {
+export default function HomeClientPage({ oilData }: { oilData: Oil[] }) {
 	return (
 		<div className="flex w-full flex-col items-center text-black">
 			<div className="m-10 mb-10 flex flex-wrap justify-between space-y-5">
