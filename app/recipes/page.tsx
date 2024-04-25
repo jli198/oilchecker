@@ -27,7 +27,7 @@ export default async function Recipes() {
 			</Button>
 			<div className="m-10 space-y-5">
 				{recipes?.map((recipe) => (
-					<Card className="mx-auto w-1/2">
+					<Card key={recipe.id} className="mx-auto w-1/2">
 						<CardHeader className="text-center">
 							<CardTitle>{recipe.name}</CardTitle>
 							<CardDescription>
