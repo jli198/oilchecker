@@ -1,16 +1,22 @@
+# AWS Amplify build settings.
+
 version: 1
 frontend:
-  phases:
-    preBuild:
-      commands:
-        - npm ci
-    build:
-      commands:
-        - npm run build
-  artifacts:
-    baseDirectory: .next
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
+    phases:
+        preBuild:
+            commands:
+                - npm ci
+
+        build:
+            commands:
+                - export DOTENV_KEY=${DOTENV_KEY}
+                - node ./scripts/dotenv.js
+                - npm run build
+
+    artifacts:
+        baseDirectory: .next
+        files:
+            - "**/*"
+    cache:
+        paths:
+            - node_modules/**/*
